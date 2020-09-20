@@ -1,0 +1,67 @@
+// Site Colors
+
+$SoftBlue: hsl(231, 69%, 60%);
+$SoftRed: hsl(0, 94%, 66%);
+$GrayishBlue: hsl(229, 8%, 60%);
+$VeryDarkBlue: hsl(229, 31%, 21%);
+
+// Font Sizing
+
+$FontBase: 1rem;
+$FontSmall: 1.15rem;
+$FontMedium: 1.5rem;
+$FontBig: 2.5rem;
+$FontXL: 3rem;
+
+// Spacing
+
+$TinySpace: 1rem;
+$SmallSpace: 2.5rem;
+$MediumSpace: 4rem;
+$BigSpace: 8rem;
+$HugeSpace: 16rem;
+
+// Decorations
+
+$TinyShadow: 0 .3rem .6rem rgba(#eee, .9);
+
+// Media Queries
+
+@mixin mediaQuery($breakpoint) {
+    @if $breakpoint==xs {
+        @media (min-width: 22em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==sm {
+        @media (min-width: 40em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==md {
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==sm-land {
+        @media (min-width: 48em) and (orientation: landscape) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==lg {
+        @media (min-width: 64em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==xl {
+        @media (min-width: 75em) {
+            @content
+        }
+    }
+}
+

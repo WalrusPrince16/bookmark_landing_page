@@ -1,0 +1,19 @@
+.btn {
+    appearance: none;
+    font-family: inherit;
+    border: none;
+    border-radius: .5rem;
+    padding: $TinySpace;
+    font-size: $FontSmall;
+
+    &--white {
+        background-color: #fff;
+        border: 1px solid #eee;
+        box-shadow: $TinyShadow;
+    }
+
+    &--blue {
+        color: #fff;
+        background-color: $SoftBlue;
+    }
+}

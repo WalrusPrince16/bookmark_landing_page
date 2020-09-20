@@ -1,0 +1,85 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 0 $SmallSpace;
+    min-height: 100vh;
+    overflow-x: hidden;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: initial;
+        padding: 0 $BigSpace;
+    }
+
+    &__img-wrapper {
+
+        &::after {
+            content: '';
+            display: block;
+            background-color: $SoftBlue;
+            border-top-left-radius: 10rem;
+            border-bottom-left-radius: 10rem;
+            position: absolute;
+            height: 80%;
+            top: 20%;
+            right: 0;
+            left: 20%;
+            z-index: -1;
+            width: calc(100% + #{$SmallSpace});
+
+            @media (min-width: 768px) {
+                width: calc(100% + #{$BigSpace});
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+    }
+
+    &__art {
+        margin-top: 10vh;
+        position: relative;
+
+        @media (min-width: 768px) {
+            margin-top: 0;
+            order: 2;
+            flex: 1;
+        }
+    }
+
+    &__text {
+        text-align: center;
+
+        @media (min-width: 768px) {
+            flex: 1;
+            text-align: left;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 768px) {
+            justify-content: initial;
+        }
+
+    }
+
+    &__h1,
+    &__p {
+        margin: 1.5rem 0;
+
+        @media (min-width: 768px) {
+            margin: 0 0 1rem 0;
+        }
+    }
+
+    &__btn {
+        margin-right: 2rem;
+    }
+}
