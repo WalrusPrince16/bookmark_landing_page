@@ -1,0 +1,48 @@
+.cards {
+    padding: $SmallSpace;
+    text-align: center;
+
+    @include mediaQuery(md) {
+        padding: $BigSpace;
+    }
+
+    &__text {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $MediumSpace;
+
+        @include mediaQuery(md) {
+            padding: $BigSpace 0;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &-card {
+            box-shadow: $BigShadow;
+            border-radius: $TinySpace;
+            padding: $SmallSpace;
+
+            @include mediaQuery(md) {
+                &:first-of-type {
+                    transform: translateY(-15%);
+                }
+
+                &:last-of-type {
+                    transform: translateY(15%);
+                }
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .dots {
+                width: 100%;
+            }
+        }
+    }
+}

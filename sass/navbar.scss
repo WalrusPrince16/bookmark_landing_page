@@ -5,19 +5,21 @@
     position: fixed;
     width: 100%;
     z-index: 2;
-    padding: $SmallSpace $SmallSpace;
+    padding: $SmallSpace;
     transition: background-color .3s;
 
     @include mediaQuery(md) {
-        padding: $TinySpace $BigSpace;
+        padding: $SmallSpace $BigSpace;
     }
 
     &--on {
         background-color: #fff;
+        border-bottom: 1px solid #eee;
     }
 
     &__img {
         &--on {
+            transition: all .3s;
 
             circle,
             path {
@@ -94,6 +96,18 @@
             color: currentColor;
             padding: $SmallSpace;
             border-top: 1px solid rgba(#fff, .3);
+            cursor: pointer;
+            transition: all .3s;
+
+            @include mediaQuery(md) {
+                &:hover {
+                    color: $SoftRed;
+                }
+            }
+
+            @include mediaQuery(sm) {
+                padding: $TinySpace $SmallSpace;
+            }
 
             &:nth-child(3) {
                 border-bottom: 1px solid rgba(#fff, .3);
@@ -106,11 +120,16 @@
                 padding: $TinySpace;
 
                 @include mediaQuery(md) {
-                    border: none;
+                    border: 1px solid currentColor;
                     background-color: $SoftRed;
                     color: #fff;
                     margin-top: initial;
-                    padding: $TinySpace %$SmallSpace;
+                    padding: $TinySpace $SmallSpace;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: $SoftRed;
+                    }
                 }
             }
 

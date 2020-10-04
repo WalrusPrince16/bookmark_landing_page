@@ -1,0 +1,57 @@
+.faq {
+    padding: $SmallSpace;
+    margin: auto;
+
+    @include mediaQuery(md) {
+        padding: $MediumSpace $BigSpace;
+    }
+
+    @include mediaQuery(lg) {
+        padding: $MediumSpace $HugeSpace;
+    }
+
+    .btn {
+        display: block;
+        margin: $SmallSpace auto 0 auto;
+    }
+
+    .p {
+        margin: $TinySpace 0;
+    }
+
+    &__accordion {
+        &-q {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: $TinySpace 0;
+            border-bottom: 1px solid #eee;
+
+            &:first-of-type {
+                border-top: 1px solid #eee;
+            }
+
+            svg {
+                stroke: $SoftBlue;
+            }
+
+            &--open {
+                svg {
+                    stroke: $SoftRed;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        &-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s;
+
+            &--open {
+                max-height: 15rem;
+            }
+        }
+    }
+}

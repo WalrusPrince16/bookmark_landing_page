@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include mediaQuery(xs) {
+        font-size: 75%;
+    }
+
+    @include mediaQuery(lg) {
+        font-size: 85%;
+    }
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.mobile {
+    @media (min-width: 768px) {
+        display: none !important;
+    }
+}
+
+.hide-on-mobile {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block !important;
+    }
+}

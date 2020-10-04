@@ -1,57 +1,11 @@
 @import './sass/varsAndMixins';
+@import './sass/utilities.scss';
+@import './sass/base.scss';
+@import './sass/text';
 @import './sass/navbar';
+@import './sass/cssGraphic';
 @import './sass/button';
 @import './sass/hero';
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Rubik", sans-serif;
-}
-
-html {
-    font-size: 62.5%;
-
-    @include mediaQuery(xs) {
-        font-size: 75%;
-    }
-
-    @include mediaQuery(lg) {
-        font-size: 85%;
-    }
-}
-
-body {
-    font-size: 1.8rem;
-}
-
-ul {
-    list-style: none;
-}
-
-.mobile {
-    @media (min-width: 768px) {
-        display: none !important;
-    }
-}
-
-.h1 {
-    font-size: $FontBig;
-    font-weight: bold;
-}
-
-.p {
-    font-size: $FontBase;
-    font-weight: 300;
-    line-height: 1.5;
-
-    &--big {
-        font-size: $FontMedium;
-
-        @include mediaQuery(lg) {
-            font-size: $FontMedium;
-        }
-    }
-}
-
+@import './sass/tabs';
+@import './sass/cards';
+@import './sass/faq';

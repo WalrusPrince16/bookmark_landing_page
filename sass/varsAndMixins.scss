@@ -10,6 +10,7 @@ $VeryDarkBlue: hsl(229, 31%, 21%);
 $FontBase: 1rem;
 $FontSmall: 1.15rem;
 $FontMedium: 1.5rem;
+$FontMediumLarge: 2rem;
 $FontBig: 2.5rem;
 $FontXL: 3rem;
 
@@ -24,6 +25,7 @@ $HugeSpace: 16rem;
 // Decorations
 
 $TinyShadow: 0 .3rem .6rem rgba(#eee, .9);
+$BigShadow: 0px 10px 12px 5px rgba(209, 209, 209, 0.55);
 
 // Media Queries
 
@@ -64,4 +66,3 @@ $TinyShadow: 0 .3rem .6rem rgba(#eee, .9);
         }
     }
 }
-

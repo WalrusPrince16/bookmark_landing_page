@@ -1,0 +1,18 @@
+.img-wrapper {
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        background-color: $SoftBlue;
+        position: absolute;
+        height: 80%;
+        top: 20%;
+        z-index: -1;
+        width: calc(100% + #{$SmallSpace});
+
+        @media (min-width: 768px) {
+            width: calc(100% + #{$BigSpace});
+        }
+    }
+}

@@ -6,7 +6,7 @@
     overflow-x: hidden;
     justify-content: center;
 
-    @media (min-width: 768px) {
+    @include mediaQuery(md) {
         flex-direction: row;
         align-items: center;
         justify-content: initial;
@@ -14,47 +14,38 @@
     }
 
     &__img-wrapper {
-
         &::after {
-            content: '';
-            display: block;
-            background-color: $SoftBlue;
             border-top-left-radius: 10rem;
             border-bottom-left-radius: 10rem;
-            position: absolute;
-            height: 80%;
-            top: 20%;
-            right: 0;
             left: 20%;
-            z-index: -1;
-            width: calc(100% + #{$SmallSpace});
-
-            @media (min-width: 768px) {
-                width: calc(100% + #{$BigSpace});
-            }
         }
     }
 
-    &__img {
-        width: 100%;
-        display: block;
-    }
-
     &__art {
-        margin-top: 10vh;
+        margin-top: $BigSpace;
         position: relative;
 
-        @media (min-width: 768px) {
+        @include mediaQuery(md) {
             margin-top: 0;
             order: 2;
             flex: 1;
         }
     }
 
+    &__img {
+        width: 100%;
+        display: block;
+        transform: scale(1.16);
+
+        @include mediaQuery(md) {
+            transform: scale(1);
+        }
+    }
+
     &__text {
         text-align: center;
 
-        @media (min-width: 768px) {
+        @include mediaQuery(md) {
             flex: 1;
             text-align: left;
         }
@@ -64,19 +55,10 @@
         display: flex;
         justify-content: center;
 
-        @media (min-width: 768px) {
+        @include mediaQuery(md) {
             justify-content: initial;
         }
 
-    }
-
-    &__h1,
-    &__p {
-        margin: 1.5rem 0;
-
-        @media (min-width: 768px) {
-            margin: 0 0 1rem 0;
-        }
     }
 
     &__btn {

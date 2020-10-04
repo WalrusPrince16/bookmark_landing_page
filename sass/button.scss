@@ -5,15 +5,29 @@
     border-radius: .5rem;
     padding: $TinySpace;
     font-size: $FontSmall;
+    transition: transform .3s, background-color .3s;
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-.3rem);
+    }
 
     &--white {
         background-color: #fff;
         border: 1px solid #eee;
         box-shadow: $TinyShadow;
+
+        &:hover {
+            background-color: darken(#eee, 10%);
+        }
     }
 
     &--blue {
         color: #fff;
         background-color: $SoftBlue;
+
+        &:hover {
+            background-color: darken($SoftBlue, 10%);
+        }
     }
 }
