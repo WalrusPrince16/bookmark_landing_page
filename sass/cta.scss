@@ -1,0 +1,36 @@
+.cta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: $SoftBlue;
+    color: #fff;
+    padding: $MediumSpace 0;
+
+    &__small {
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-self: center;
+
+        @include mediaQuery(md) {
+            flex-direction: row;
+        }
+
+        &-input {
+            appearance: none;
+        }
+
+        &-button {
+            border: none;
+            background-color: $SoftRed;
+        }
+    }
+}

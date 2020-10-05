@@ -3,11 +3,8 @@
     margin: auto;
 
     @include mediaQuery(md) {
-        padding: $MediumSpace $BigSpace;
-    }
-
-    @include mediaQuery(lg) {
-        padding: $MediumSpace $HugeSpace;
+        width: 75%;
+        margin: 0 auto;
     }
 
     .btn {

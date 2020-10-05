@@ -642,9 +642,11 @@ ul {
   }
 }
 
-.cards__text {
-  width: 75%;
-  margin: 0 auto;
+@media (min-width: 48em) {
+  .cards__text {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
 
 .cards__grid {
@@ -696,13 +698,8 @@ ul {
 
 @media (min-width: 48em) {
   .faq {
-    padding: 4rem 8rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .faq {
-    padding: 4rem 16rem;
+    width: 75%;
+    margin: 0 auto;
   }
 }
 
@@ -753,5 +750,64 @@ ul {
 
 .faq__accordion-a--open {
   max-height: 15rem;
+}
+
+.cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #5368df;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.cta__small {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.cta__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+@media (min-width: 48em) {
+  .cta__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.cta__form-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.cta__form-button {
+  border: none;
+  background-color: #fa5757;
 }
 /*# sourceMappingURL=main.css.map */
