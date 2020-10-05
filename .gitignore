@@ -6,4 +6,5 @@ design
 .DS_Store
 .gitignore
 style-guide.md
-README.md   
+README.md
+sass/*.css

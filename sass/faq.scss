@@ -1,11 +1,5 @@
 .faq {
-    padding: $SmallSpace;
-    margin: auto;
-
-    @include mediaQuery(md) {
-        width: 75%;
-        margin: 0 auto;
-    }
+    padding: $MediumSpace 0;
 
     .btn {
         display: block;

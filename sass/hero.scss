@@ -1,7 +1,6 @@
 .hero {
     display: flex;
     flex-direction: column;
-    padding: 0 $SmallSpace;
     min-height: 100vh;
     overflow-x: hidden;
     justify-content: center;
@@ -10,7 +9,6 @@
         flex-direction: row;
         align-items: center;
         justify-content: initial;
-        padding: 0 $BigSpace;
     }
 
     &__img-wrapper {
@@ -59,9 +57,5 @@
             justify-content: initial;
         }
 
-    }
-
-    &__btn {
-        margin-right: 2rem;
     }
 }

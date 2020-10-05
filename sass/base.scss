@@ -25,6 +25,13 @@ ul {
     list-style: none;
 }
 
+input,
+button {
+    font-size: inherit;
+    font-family: inherit;
+    appearance: none;
+}
+
 .mobile {
     @media (min-width: 768px) {
         display: none !important;

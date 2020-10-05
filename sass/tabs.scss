@@ -1,17 +1,5 @@
 .tabs {
     text-align: center;
-    padding: 0 $SmallSpace;
-
-    @include mediaQuery(md) {
-        padding: 0 $BigSpace;
-    }
-
-    &__text {
-        @include mediaQuery(md) {
-            width: 75%;
-            margin: 0 auto;
-        }
-    }
 
     &__header {
         display: flex;

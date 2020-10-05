@@ -1,0 +1,42 @@
+.container {
+    &--full {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    &--responsive {
+        width: 90vw;
+        margin: 0 auto;
+
+        @include mediaQuery(md) {
+            width: 84vw;
+        }
+
+        &-p {
+            padding-left: 5vw;
+            padding-right: 5vw;
+
+            @include mediaQuery(md) {
+                padding-left: 8vw;
+                padding-right: 8vw;
+            }
+        }
+    }
+
+    &--narrow {
+        width: 90vw;
+        margin: auto;
+
+        @include mediaQuery(md) {
+            width: 80vw;
+        }
+
+        @include mediaQuery(lg) {
+            width: 75vw;
+        }
+
+        @include mediaQuery(xl) {
+            width: 60vw;
+        }
+    }
+}
