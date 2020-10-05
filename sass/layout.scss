@@ -4,6 +4,14 @@
         max-width: 100%;
     }
 
+    &--nav {
+        padding: 2vw 5vw;
+
+        @include mediaQuery(md) {
+            padding: 3vw 8vw;
+        }
+    }
+
     &--responsive {
         width: 90vw;
         margin: 0 auto;

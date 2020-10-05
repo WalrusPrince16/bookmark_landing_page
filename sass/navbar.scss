@@ -5,12 +5,7 @@
     position: fixed;
     width: 100%;
     z-index: 2;
-    padding: $SmallSpace;
     transition: background-color .3s;
-
-    @include mediaQuery(md) {
-        padding: $SmallSpace $BigSpace;
-    }
 
     &--on {
         background-color: #fff;

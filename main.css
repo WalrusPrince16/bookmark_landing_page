@@ -3,6 +3,16 @@
   max-width: 100%;
 }
 
+.container--nav {
+  padding: 2vw 5vw;
+}
+
+@media (min-width: 48em) {
+  .container--nav {
+    padding: 3vw 8vw;
+  }
+}
+
 .container--responsive {
   width: 90vw;
   margin: 0 auto;
@@ -176,15 +186,8 @@ button {
   position: fixed;
   width: 100%;
   z-index: 2;
-  padding: 2.5rem;
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
-}
-
-@media (min-width: 48em) {
-  .nav {
-    padding: 2.5rem 8rem;
-  }
 }
 
 .nav--on {
