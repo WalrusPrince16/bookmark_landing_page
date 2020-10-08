@@ -15,6 +15,10 @@ html {
     @include mediaQuery(lg) {
         font-size: 85%;
     }
+
+    @include mediaQuery(xl) {
+        font-size: 90%;
+    }
 }
 
 body {
@@ -27,13 +31,15 @@ ul {
 
 input,
 button {
+    color: inherit;
+    border: none;
     font-size: inherit;
     font-family: inherit;
     appearance: none;
 }
 
 .mobile {
-    @media (min-width: 768px) {
+    @include mediaQuery(md) {
         display: none !important;
     }
 }
@@ -41,7 +47,7 @@ button {
 .hide-on-mobile {
     display: none;
 
-    @media (min-width: 768px) {
+    @include mediaQuery(md) {
         display: block !important;
     }
 }

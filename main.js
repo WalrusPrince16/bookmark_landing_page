@@ -63,7 +63,7 @@ let showTab = (tabId) => {
     });
 }
 
-// faq
+// faq accordion
 
 const faqQuestions = document.querySelectorAll('.faq__accordion-q');
 const faqAnswers = document.querySelectorAll('.faq__accordion-a');
@@ -75,4 +75,6 @@ faqQuestions.forEach(faqQ => {
         this.classList.toggle('faq__accordion-q--open');
         this.nextElementSibling.classList.toggle(toggleAnswer);
     });
-})
+});
+
+// cta

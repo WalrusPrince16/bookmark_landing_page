@@ -1,11 +1,14 @@
 .container {
-    &--full {
-        width: 100%;
-        max-width: 100%;
+    &--nav {
+        padding: 8vw 5vw;
+
+        @include mediaQuery(md) {
+            padding: 3vw 8vw;
+        }
     }
 
-    &--nav {
-        padding: 2vw 5vw;
+    &--footer {
+        padding: 8vw 5vw;
 
         @include mediaQuery(md) {
             padding: 3vw 8vw;
@@ -13,11 +16,11 @@
     }
 
     &--responsive {
-        width: 90vw;
+        width: 85vw;
         margin: 0 auto;
 
         @include mediaQuery(md) {
-            width: 84vw;
+            width: 80vw;
         }
 
         &-p {

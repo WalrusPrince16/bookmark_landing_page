@@ -9,9 +9,9 @@
     padding: $MediumSpace 0;
 
     &__small {
-        font-size: 1rem;
+        font-size: $FontBase;
         text-transform: uppercase;
-        letter-spacing: 1rem;
+        letter-spacing: .5rem;
     }
 
     &__form {
@@ -19,18 +19,38 @@
         flex-direction: column;
         margin: 0 auto;
         align-self: center;
+        font-size: $FontBase;
 
         @include mediaQuery(md) {
             flex-direction: row;
         }
 
-        &-input {
-            appearance: none;
+        &>* {
+            width: 100%;
+            align-self: stretch;
+
+            @include mediaQuery(md) {
+                width: auto;
+                align-self: inherit;
+            }
         }
 
-        &-button {
-            border: none;
-            background-color: $SoftRed;
+        &-input {
+            display: block;
+            border-radius: .5rem;
+            padding: .5rem 1rem;
+            margin-bottom: 1rem;
+
+            @include mediaQuery(md) {
+                margin-right: 1rem;
+                margin-bottom: 0;
+            }
+        }
+
+        &-btn {
+            cursor: pointer;
+            padding: .5rem 1rem;
+            background-color: $SoftRed !important;
         }
     }
 }

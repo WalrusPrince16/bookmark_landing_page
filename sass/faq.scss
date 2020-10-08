@@ -1,5 +1,6 @@
 .faq {
     padding: $MediumSpace 0;
+    font-size: $FontSmall;
 
     .btn {
         display: block;
@@ -41,7 +42,7 @@
             transition: max-height .3s;
 
             &--open {
-                max-height: 15rem;
+                max-height: 100vh;
             }
         }
     }
