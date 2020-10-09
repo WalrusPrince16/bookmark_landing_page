@@ -5,14 +5,6 @@ $SoftRed: hsl(0, 94%, 66%);
 $GrayishBlue: hsl(229, 8%, 60%);
 $VeryDarkBlue: hsl(229, 31%, 21%);
 
-// Text Sizing
-
-$FontTiny: 1.8rem;
-$FontSmall: 2rem;
-$FontMedium: 2.2rem;
-$FontBig: 2.5rem;
-$FontXL: 3rem;
-
 // Spacing
 
 $TinySpace: 1rem;
@@ -65,3 +57,9 @@ $BigShadow: 0px 10px 12px 5px rgba(209, 209, 209, 0.55);
         }
     }
 }
+
+$FontTiny: calc(2vh + 1rem);
+$FontSmall: 1.2rem;
+$FontMedium: 1.5rem;
+$FontBig: 1.8rem;
+$FontXL: 2rem;

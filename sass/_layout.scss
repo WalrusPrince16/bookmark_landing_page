@@ -17,26 +17,25 @@
 
     &--responsive {
         width: 85vw;
-        margin: 0 auto;
+        margin: 5vw auto;
 
         @include mediaQuery(md) {
+            margin: 10vw auto;
             width: 80vw;
         }
 
         &-p {
-            padding-left: 5vw;
-            padding-right: 5vw;
+            padding: 2.5vw 5vw;
 
             @include mediaQuery(md) {
-                padding-left: 8vw;
-                padding-right: 8vw;
+                padding: 4vw 8vw;
             }
         }
     }
 
     &--narrow {
         width: 90vw;
-        margin: auto;
+        margin: 5vw auto;
 
         @include mediaQuery(md) {
             width: 80vw;

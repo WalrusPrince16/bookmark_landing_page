@@ -1,27 +1,28 @@
 // Abstracts
 
-@import './sassCSS/varsAndMixins';
-@import './sassCSS/base';
+@import './sass/_varsAndMixins';
+@import './sass/_base';
+@import './sass/_utilities';
 
 // Containers
 
-@import './sassCSS/layout';
+@import './sass/_layout';
 
 // Text
 
-@import './sassCSS/text';
+@import './sass/_text';
 
 // Components
 
-@import './sassCSS/cssGraphic';
-@import './sassCSS/button';
+@import './sass/_cssGraphic';
+@import './sass/_button';
 
 // Page Sections
 
-@import './sassCSS/navbar';
-@import './sassCSS/hero';
-@import './sassCSS/tabs';
-@import './sassCSS/cards';
-@import './sassCSS/faq';
-@import './sassCSS/cta';
-@import './sassCSS/footer';
+@import './sass/_navbar';
+@import './sass/_hero';
+@import './sass/_tabs';
+@import './sass/_cards';
+@import './sass/_faq';
+@import './sass/_cta';
+@import './sass/_footer';
